@@ -1,0 +1,32 @@
+{
+  "root": "libs/slices/global",
+  "sourceRoot": "libs/slices/global/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/slices/global",
+        "main": "libs/slices/global/src/index.ts",
+        "tsConfig": "libs/slices/global/tsconfig.lib.json",
+        "assets": ["libs/slices/global/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/slices/global/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/slices/global"],
+      "options": {
+        "jestConfig": "libs/slices/global/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
