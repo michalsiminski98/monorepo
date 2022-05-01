@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@./route-example": ["libs/route-example/src/index.ts"],
       "@./slices/global": ["libs/slices/global/src/index.ts"]
     }
   },

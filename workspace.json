@@ -3,6 +3,7 @@
   "projects": {
     "react-project": "apps/react-project",
     "react-project-e2e": "apps/react-project-e2e",
+    "route-example": "libs/route-example",
     "slices-global": "libs/slices/global"
   }
 }
