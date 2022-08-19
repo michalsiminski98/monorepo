@@ -21,7 +21,7 @@ export function App() {
     <StyledApp>
       <Router>
         <Routes>
-          <Route path="/asd" element={<RouteExample />}></Route>
+          <Route path="/asd" element={<RouteExample />}>asd</Route>
         </Routes>
       </Router>
     </StyledApp>

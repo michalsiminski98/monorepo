@@ -1,0 +1,83 @@
+{
+  "root": "apps/summary-08-2022",
+  "sourceRoot": "apps/summary-08-2022/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/summary-08-2022",
+        "index": "apps/summary-08-2022/src/index.html",
+        "baseHref": "/",
+        "main": "apps/summary-08-2022/src/main.tsx",
+        "polyfills": "apps/summary-08-2022/src/polyfills.ts",
+        "tsConfig": "apps/summary-08-2022/tsconfig.app.json",
+        "assets": [
+          "apps/summary-08-2022/src/favicon.ico",
+          "apps/summary-08-2022/src/assets"
+        ],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/summary-08-2022/src/environments/environment.ts",
+              "with": "apps/summary-08-2022/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "summary-08-2022:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "summary-08-2022:build:development"
+        },
+        "production": {
+          "buildTarget": "summary-08-2022:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/summary-08-2022/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/summary-08-2022"],
+      "options": {
+        "jestConfig": "apps/summary-08-2022/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

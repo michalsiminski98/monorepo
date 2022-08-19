@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "start": "nx serve summary-08-2022",
+    "starter": "nx serve react-project",
     "build": "nx build",
     "test": "nx test"
   },
