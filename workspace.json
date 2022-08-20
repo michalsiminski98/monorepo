@@ -1,10 +1,13 @@
 {
   "version": 2,
   "projects": {
+    "main-content": "libs/main-content",
+    "main-content-routing": "libs/main-content-routing",
     "react-project": "apps/react-project",
     "react-project-e2e": "apps/react-project-e2e",
     "route-example": "libs/route-example",
     "slices-global": "libs/slices/global",
+    "slices-main-content": "libs/slices/main-content",
     "summary-08-2022": "apps/summary-08-2022",
     "summary-08-2022-e2e": "apps/summary-08-2022-e2e"
   }

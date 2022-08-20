@@ -15,8 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@./main-content": ["libs/main-content/src/index.ts"],
+      "@./main-content-routing": ["libs/main-content-routing/src/index.ts"],
       "@./route-example": ["libs/route-example/src/index.ts"],
-      "@./slices/global": ["libs/slices/global/src/index.ts"]
+      "@./slices/global": ["libs/slices/global/src/index.ts"],
+      "@./slices/main-content": ["libs/slices/main-content/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
