@@ -4,11 +4,7 @@ import {
 } from '@./slices/main-content';
 import { FC, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import styled from 'styled-components';
-
-const StyledContent = styled.section`
-  background-color: 'rgb(242, 242, 242)';
-`;
+import { StyledContent } from './main-content-styles';
 
 export const MainContent: FC = () => {
   const { articleCards } = useSelector(mainContentDataSelector);
