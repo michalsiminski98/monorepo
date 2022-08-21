@@ -16,9 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@./arcticles-section": ["libs/arcticles-section/src/index.ts"],
+      "@./articles-form": ["libs/articles-form/src/index.ts"],
+      "@./articles-form-buttons": ["libs/articles-form-buttons/src/index.ts"],
       "@./main-content": ["libs/main-content/src/index.ts"],
       "@./main-content-routing": ["libs/main-content-routing/src/index.ts"],
       "@./route-example": ["libs/route-example/src/index.ts"],
+      "@./shared/text-field": ["libs/shared/text-field/src/index.ts"],
       "@./slices/global": ["libs/slices/global/src/index.ts"],
       "@./slices/main-content": ["libs/slices/main-content/src/index.ts"]
     }

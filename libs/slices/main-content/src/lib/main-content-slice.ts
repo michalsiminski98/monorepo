@@ -16,15 +16,9 @@ export const initialState: IMainContentState = {
 
 const setArticleCards = (
   state: IMainContentState,
-  { payload }: PayloadAction
+  { payload }: PayloadAction<IArticleCard[]>
 ) => {
-  state.articleCards = [
-    {
-      id: 'fj0823j9oid239823dj',
-      name: 'boiler plate',
-      text: 'lorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit ametlorem ipsum dolor sit amet',
-    },
-  ];
+  state.articleCards = payload;
 };
 
 const mainContentSlice = createSlice({
