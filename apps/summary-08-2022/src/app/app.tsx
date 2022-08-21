@@ -1,6 +1,7 @@
 import { MainContentRouting } from '@./main-content-routing';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import '../i18n';
 
 const StyledApp = styled.div`
   // Your style here
@@ -11,7 +12,7 @@ export function App() {
     <StyledApp>
       <Router>
         <Routes>
-          <Route path='/' element={<MainContentRouting/>}/>
+          <Route path="/" element={<MainContentRouting />} />
         </Routes>
       </Router>
     </StyledApp>

@@ -6,7 +6,7 @@ import {
   mainContentDataSelector,
 } from '@./slices/main-content';
 import { useFormik } from 'formik';
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { StyledContent } from './main-content-styles';
 
@@ -38,14 +38,13 @@ export const MainContent: FC = () => {
         formik.resetForm();
       }
     },
+    validate: () => {
+      return;
+    },
     validateOnMount: false,
     validateOnBlur: false,
     validateOnChange: false,
   });
-
-  useEffect(() => {
-    // dispatch(mainContentActions.setArticleCards());
-  }, [dispatch]);
 
   return (
     <StyledContent>

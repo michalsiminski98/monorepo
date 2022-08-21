@@ -2,11 +2,11 @@
 
 ## start project
 
-npm i
-npm start
+npm i <br>
+npm start <br>
 
 ## technologies and libraries
 
-formik
-i18
-redux toolkit
+formik <br>
+i18 <br>
+redux toolkit <br>
