@@ -1,0 +1,23 @@
+{
+  "root": "libs/arcticles-section",
+  "sourceRoot": "libs/arcticles-section/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/arcticles-section/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/arcticles-section"],
+      "options": {
+        "jestConfig": "libs/arcticles-section/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

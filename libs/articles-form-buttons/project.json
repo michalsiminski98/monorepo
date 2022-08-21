@@ -1,0 +1,23 @@
+{
+  "root": "libs/articles-form-buttons",
+  "sourceRoot": "libs/articles-form-buttons/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/articles-form-buttons/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/articles-form-buttons"],
+      "options": {
+        "jestConfig": "libs/articles-form-buttons/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

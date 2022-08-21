@@ -1,0 +1,23 @@
+{
+  "root": "libs/articles-form",
+  "sourceRoot": "libs/articles-form/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/articles-form/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/articles-form"],
+      "options": {
+        "jestConfig": "libs/articles-form/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

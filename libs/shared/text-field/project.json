@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/text-field",
+  "sourceRoot": "libs/shared/text-field/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/text-field/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/text-field"],
+      "options": {
+        "jestConfig": "libs/shared/text-field/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
