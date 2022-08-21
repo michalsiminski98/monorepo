@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "arcticles-section": "libs/arcticles-section",
     "main-content": "libs/main-content",
     "main-content-routing": "libs/main-content-routing",
     "react-project": "apps/react-project",

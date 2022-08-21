@@ -1,3 +1,4 @@
+import { ArticlesSection } from '@./arcticles-section';
 import {
   mainContentActions,
   mainContentDataSelector,
@@ -10,22 +11,13 @@ export const MainContent: FC = () => {
   const { articleCards } = useSelector(mainContentDataSelector);
   const dispatch = useDispatch();
 
-  const createProducts = () => {
-    return articleCards.map(({ name, text }) => {
-      return (
-        <article>
-          <h3>{name}</h3>
-          <p>{text}</p>
-        </article>
-      );
-    });
-  };
-
   useEffect(() => {
     dispatch(mainContentActions.setArticleCards());
   }, [dispatch]);
 
-  return <StyledContent>{createProducts()}</StyledContent>;
+  return (
+    <StyledContent>
+      <ArticlesSection cards={articleCards} />
+    </StyledContent>
+  );
 };
-
-export default MainContent;

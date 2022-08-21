@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "core-js": "^3.6.5",
+    "formik": "^2.2.9",
     "i18next": "^21.6.16",
     "react": "18.0.0",
     "react-dom": "18.0.0",
