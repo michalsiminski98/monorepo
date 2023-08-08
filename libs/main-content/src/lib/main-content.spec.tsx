@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import MainContent from './main-content';
+import { MainContent } from './main-content';
 
 describe('MainContent', () => {
   it('should render successfully', () => {
